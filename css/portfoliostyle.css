@@ -1,0 +1,71 @@
+nav{
+	background-color: slategrey;
+}
+nav ul li{
+	list-style-type: none;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+nav ul li a:hover{
+	background-color: lightgrey;
+}
+footer section{
+	text-align: center;
+}
+footer section a{
+	text-decoration: none;
+	color: white;
+}
+h1{
+font-size: 25px;
+font-family: "Arial";
+}
+h1 a{
+	text-decoration: none;
+}
+ul li {
+	font-family: Arial;
+	margin: 4px;
+}
+h2{
+	text-align: center;
+}
+footer section{
+	text-align: center;
+}
+footer section a{
+	text-decoration: none;
+	color: white;
+}
+h3{
+	text-align: center;
+}
+h3 a{
+	text-decoration: none;
+}
+.petpic{
+	height: auto;
+	width: 400px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;	
+}
+.sitepic{
+	height: 300px;
+	width: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.blogpic{
+	height: 300px;
+	width: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+img{
+	border: 4px double black;
+}

@@ -63,7 +63,6 @@ nav ul li a:hover{
 	background-color: lightgrey;
 }
 p{
-	text-align: center;
 	font-size: 15px;
 	font-family: "Arial";
 }
@@ -73,5 +72,26 @@ footer section{
 footer section a{
 	text-decoration: none;
 	color: white;
-	/*hello*/
+}
+ul li {
+	font-family: Arial;
+	margin: 4px;
+}
+.contactlinks{
+	display: flex;
+	justify-content: space-around;
+}
+.contactlinks img{
+	height: 50px;
+	width: auto;
+}
+.contactlinks li{
+	list-style-type: none;
+}
+h3{
+	text-align: center;
+}
+h3 a{
+	text-decoration: none;
+	
 }
