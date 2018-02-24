@@ -45,3 +45,7 @@ img{
 .contactlinks li{
 	list-style-type: none;
 }
+footer{
+	grid-row: -1/-2;
+	background-color: slategrey;
+}
