@@ -1,0 +1,44 @@
+h1{
+font-size: 25px;
+font-family: "Arial";
+}
+h1 a{
+	text-decoration: none;
+}
+nav{
+	background-color: slategrey;
+}
+nav ul li{
+	list-style-type: none;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+nav ul li a:hover{
+	background-color: lightgrey;
+}
+.header{
+	text-align: center;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+img{
+	height: 150px;
+	width: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+p{
+	text-align: center;
+	font-size: 15px;
+	font-family: "Arial";
+}
+footer section{
+	text-align: center;
+}
+footer section a{
+	text-decoration: none;
+	color: black;
+}
