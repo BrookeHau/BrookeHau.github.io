@@ -1,3 +1,4 @@
+//change font size of navigation bar items
 var navList = document.querySelectorAll('nav ul li a')
 navList.forEach(function(list){
 	list.addEventListener('mouseover', function(){
@@ -12,13 +13,60 @@ navList.forEach(function(list){
 	})
 });
 
-var imageHover = document.querySelectorAll('img')
+/*var navList = document.querySelectorAll('nav ul li a')
+navList.forEach(function(list){
+	if(list.addEventListener('mouseover')){function(){
+	list.style.opacity = 1;
+	}} else{
+		list.style.opacity=.5;
+	}
+
+});*/
+
+//change opacity of link sections when you hover
+var imageHover = document.querySelectorAll('.recipes')
 imageHover.forEach(function(image){
 	image.addEventListener('mouseover', function(){
-		image.style.fadeOut(0.1);
+		image.style.opacity = 0.4;
 	})
 });
 
+var imageHover = document.querySelectorAll('.recipes')
+imageHover.forEach(function(image){
+	image.addEventListener('mouseout', function(){
+		image.style.opacity = 1;
+	})
+});
+
+var imageHover = document.querySelectorAll('.life')
+imageHover.forEach(function(image){
+	image.addEventListener('mouseover', function(){
+		image.style.opacity = 0.4;
+	})
+});
+
+var imageHover = document.querySelectorAll('.life')
+imageHover.forEach(function(image){
+	image.addEventListener('mouseout', function(){
+		image.style.opacity = 1;
+	})
+});
+
+var imageHover = document.querySelectorAll('.wellness')
+imageHover.forEach(function(image){
+	image.addEventListener('mouseover', function(){
+		image.style.opacity = 0.4;
+	})
+});
+
+var imageHover = document.querySelectorAll('.wellness')
+imageHover.forEach(function(image){
+	image.addEventListener('mouseout', function(){
+		image.style.opacity = 1;
+	})
+});
+
+//change footer font size when you hover
 var footer = document.querySelector('footer a')
 	footer.addEventListener('mouseover', function(){
 	footer.style.fontSize = '25px';
@@ -30,6 +78,7 @@ var footer = document.querySelector('footer a')
 	});
 
 
+//alert that you're heading to my blog when you click on the link
 var blogLink = document.querySelector('.recipes a');
 blogLink.onclick = function(){
 		alert("You are now heading to my personal blog!")
@@ -46,5 +95,6 @@ blogLink3.onclick = function(){
 
 }
 
+//initial popup window to welcome you to my blog
 window.alert("Welcome to my Portfolio!");
 

@@ -41,9 +41,11 @@ footer section a{
 }
 h3{
 	text-align: center;
+
 }
 h3 a{
 	text-decoration: none;
+	color: IndianRed;
 }
 .petpic{
 	height: auto;
