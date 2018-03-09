@@ -36,3 +36,8 @@ footer{
 .technicalinv ul li {
 	margin: 0px 3px 0px 3px;
 }
+
+.mainbullet a {
+	color: black;
+	text-decoration: none;
+}

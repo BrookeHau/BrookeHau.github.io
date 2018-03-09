@@ -8,9 +8,9 @@ nav ul li a{
 	text-decoration: none;
 	color: white;
 }
-nav ul li a:hover{
+/*nav ul li a:hover{
 	background-color: lightgrey;
-}
+}*/
 footer section{
 	text-align: center;
 }

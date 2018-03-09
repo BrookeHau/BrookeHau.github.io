@@ -45,45 +45,18 @@ var footer = document.querySelector('footer a')
 	footer.style.fontSize = '16px';
 	});
 
-//change portfolio hover properties
-var portlink = document.querySelector('.virtualpet a');
-portlink.addEventListener('mouseover', function(){
-	portlink.style.color = 'darkseagreen';
+
+//hover over resume
+var involvementHover = document.querySelectorAll('.mainbullet a');
+involvementHover.forEach(function(item){
+	item.addEventListener('mouseover', function(){
+		item.style.color = 'darkseagreen';
+	})
 });
 
-var portlink = document.querySelector('.virtualpet a');
-portlink.addEventListener('mouseout', function(){
-	portlink.style.color = 'indianRed';
-});
-
-
-var portlink2 = document.querySelector('.reviewsite a');
-portlink2.addEventListener('mouseover', function(){
-	portlink2.style.color = 'darkseagreen';
-});
-
-var portlink2 = document.querySelector('.reviewsite a');
-portlink2.addEventListener('mouseout', function(){
-	portlink2.style.color = 'indianRed';
-});
-
-
-var portlink3 = document.querySelector('.blog a');
-portlink3.addEventListener('mouseover', function(){
-	portlink3.style.color = 'darkseagreen';
-});
-
-var portlink3 = document.querySelector('.blog a');
-portlink3.addEventListener('mouseout', function(){
-	portlink3.style.color = 'indianRed';
-});
-
-var portlink4 = document.querySelector('.fullstacksite a');
-portlink4.addEventListener('mouseover', function(){
-	portlink4.style.color = 'darkseagreen';
-});
-
-var portlink4 = document.querySelector('.fullstacksite a');
-portlink4.addEventListener('mouseout', function(){
-	portlink4.style.color = 'indianRed';
+var involvementHover = document.querySelectorAll('.mainbullet a');
+involvementHover.forEach(function(item){
+	item.addEventListener('mouseout', function(){
+		item.style.color = 'black';
+	})
 });

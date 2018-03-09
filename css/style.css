@@ -15,9 +15,9 @@ nav ul li a{
 	text-decoration: none;
 	color: white;
 }
-nav ul li a:hover{
+/*nav ul li a:hover{
 	background-color: lightgrey;
-}
+}*/
 .header{
 	text-align: center;
 	border-bottom: 1px solid black;

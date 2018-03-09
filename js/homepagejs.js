@@ -1,5 +1,5 @@
 //change font size of navigation bar items
-var navList = document.querySelectorAll('nav ul li a')
+/*var navList = document.querySelectorAll('nav ul li a')
 navList.forEach(function(list){
 	list.addEventListener('mouseover', function(){
 	list.style.fontSize = '25px';
@@ -11,17 +11,28 @@ navList.forEach(function(list){
 	list.addEventListener('mouseout', function(){
 	list.style.fontSize = '16px';
 	})
-});
-
-/*var navList = document.querySelectorAll('nav ul li a')
-navList.forEach(function(list){
-	if(list.addEventListener('mouseover')){function(){
-	list.style.opacity = 1;
-	}} else{
-		list.style.opacity=.5;
-	}
-
 });*/
+
+const navElems = document.querySelectorAll('nav ul li');
+
+navElems.forEach(function(navElem) {
+  navElem.addEventListener('mouseover', function() {
+    navElems.forEach(function(navElem) {
+      navElem.classList.remove('active')
+    })
+    this.classList.add('active');
+    navElems.forEach(function(navElem) {
+      if (!navElem.classList.contains('active')) {
+        navElem.style.opacity = '0.5'
+      }
+    })
+  })
+  navElem.addEventListener('mouseout', function() {
+    navElems.forEach(function(navElem) {
+      navElem.style.opacity = '1';
+    })
+  })
+})
 
 //change opacity of link sections when you hover
 var imageHover = document.querySelectorAll('.recipes')
