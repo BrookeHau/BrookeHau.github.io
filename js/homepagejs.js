@@ -1,18 +1,4 @@
-//change font size of navigation bar items
-/*var navList = document.querySelectorAll('nav ul li a')
-navList.forEach(function(list){
-	list.addEventListener('mouseover', function(){
-	list.style.fontSize = '25px';
-	})
-});
-
-var navList = document.querySelectorAll('nav ul li a')
-navList.forEach(function(list){
-	list.addEventListener('mouseout', function(){
-	list.style.fontSize = '16px';
-	})
-});*/
-
+//change nav Element display
 const navElems = document.querySelectorAll('nav ul li');
 
 navElems.forEach(function(navElem) {
@@ -90,7 +76,7 @@ var footer = document.querySelector('footer a')
 
 
 //alert that you're heading to my blog when you click on the link
-var blogLink = document.querySelector('.recipes a');
+var blogLink = document.querySelector('#recipe-slider li a');
 blogLink.onclick = function(){
 		alert("You are now heading to my personal blog!")
 }
@@ -109,3 +95,21 @@ blogLink3.onclick = function(){
 //initial popup window to welcome you to my blog
 window.alert("Welcome to my Portfolio!");
 
+//popup window
+ var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
