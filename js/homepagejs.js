@@ -93,7 +93,7 @@ blogLink3.onclick = function(){
 }
 
 //initial popup window to welcome you to my blog
-window.alert("Welcome to my Portfolio!");
+/*window.alert("Welcome to my Portfolio!");*/
 
 //popup window
  var modal = document.querySelector(".modal");
@@ -113,3 +113,15 @@ window.alert("Welcome to my Portfolio!");
     trigger.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
+
+    //contact dropdown menu
+    var button = document.querySelector('.contact-menu');
+	var menu = document.querySelector("#menu");
+
+    button.addEventListener('click', function(){
+    	if(menu.style.display === 'block'){
+    		menu.style.display = 'none';
+    	} else {
+    		menu.style.display = 'block';
+    	}
+    })
