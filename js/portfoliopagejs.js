@@ -87,3 +87,17 @@ var portlink4 = document.querySelector('.fullstacksite a');
 portlink4.addEventListener('mouseout', function(){
 	portlink4.style.color = 'indianRed';
 });
+
+//expand and collapse text
+var text = document.querySelector('.collapseText');
+var expandButton = document.querySelector('.expandButton');
+var skills = document.querySelector('.skills');
+
+expandButton.addEventListener('click', function(){
+	if(text.style.display === 'block'){
+		text.style.display = 'none';
+	} else {
+		text.style.display = 'block';
+skills.replace("Skills", "Less");
+	}
+})

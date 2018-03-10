@@ -121,7 +121,11 @@ blogLink3.onclick = function(){
     button.addEventListener('click', function(){
     	if(menu.style.display === 'block'){
     		menu.style.display = 'none';
+        button.replace('See Skills', 'See Less');
     	} else {
     		menu.style.display = 'block';
+
     	}
     })
+
+  

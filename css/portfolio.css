@@ -46,6 +46,6 @@ footer{
 	grid-row: -2/-1;
 	border-bottom: 1px solid black;
 }
-.skills{
-
+.collapseText{
+	display: none;
 }
