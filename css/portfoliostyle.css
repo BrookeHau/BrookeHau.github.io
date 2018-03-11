@@ -8,9 +8,7 @@ nav ul li a{
 	text-decoration: none;
 	color: white;
 }
-/*nav ul li a:hover{
-	background-color: lightgrey;
-}*/
+
 footer section{
 	text-align: center;
 }
@@ -32,20 +30,13 @@ ul li {
 h2{
 	text-align: center;
 }
-footer section{
-	text-align: center;
-}
-footer section a{
-	text-decoration: none;
-	color: white;
-}
+
 h3{
 	text-align: center;
-
 }
 h3 a{
 	text-decoration: none;
-	color: IndianRed;
+	color: indianRed;
 }
 .petpic{
 	height: auto;
@@ -70,4 +61,11 @@ h3 a{
 }
 img{
 	border: 4px double black;
+}
+footer section{
+	text-align: center;
+}
+footer section a{
+	text-decoration: none;
+	color: white;
 }

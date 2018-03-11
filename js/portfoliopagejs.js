@@ -1,18 +1,4 @@
-//change font size of navigation bar items
-/*var navList = document.querySelectorAll('nav ul li a')
-navList.forEach(function(list){
-	list.addEventListener('mouseover', function(){
-	list.style.fontSize = '25px';
-	})
-});
-
-var navList = document.querySelectorAll('nav ul li a')
-navList.forEach(function(list){
-	list.addEventListener('mouseout', function(){
-	list.style.fontSize = '16px';
-	})
-});*/
-
+//change opacity of nav elements
 const navElems = document.querySelectorAll('nav ul li');
 
 navElems.forEach(function(navElem) {
@@ -33,6 +19,20 @@ navElems.forEach(function(navElem) {
     })
   })
 })
+
+//contact dropdown menu
+  let button = document.querySelector('.contact-menu');
+	let menu = document.querySelector("#menu");
+
+    button.addEventListener('click', function(){
+    	if(menu.style.display === 'block'){
+    		menu.style.display = 'none';
+    	} else {
+    		menu.style.display = 'block';
+    	}
+    })
+
+  
 
 //change footer font size when you hover
 var footer = document.querySelector('footer a')
@@ -88,16 +88,3 @@ portlink4.addEventListener('mouseout', function(){
 	portlink4.style.color = 'indianRed';
 });
 
-//expand and collapse text
-var text = document.querySelector('.collapseText');
-var expandButton = document.querySelector('.expandButton');
-var skills = document.querySelector('.skills');
-
-expandButton.addEventListener('click', function(){
-	if(text.style.display === 'block'){
-		text.style.display = 'none';
-	} else {
-		text.style.display = 'block';
-skills.replace("Skills", "Less");
-	}
-})

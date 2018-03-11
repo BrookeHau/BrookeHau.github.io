@@ -60,3 +60,17 @@ involvementHover.forEach(function(item){
 		item.style.color = 'black';
 	})
 });
+
+//contact dropdown menu
+  let button = document.querySelector('.contact-menu');
+	let menu = document.querySelector("#menu");
+
+    button.addEventListener('click', function(){
+    	if(menu.style.display === 'block'){
+    		menu.style.display = 'none';
+    	} else {
+    		menu.style.display = 'block';
+    	}
+    })
+
+  

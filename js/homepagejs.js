@@ -76,27 +76,24 @@ var footer = document.querySelector('footer a')
 
 
 //alert that you're heading to my blog when you click on the link
-var blogLink = document.querySelector('#recipe-slider li a');
+let blogLink = document.querySelector('#recipe-slider li a');
 blogLink.onclick = function(){
 		alert("You are now heading to my personal blog!")
 }
 
-var blogLink2 = document.querySelector('.life a');
+let blogLink2 = document.querySelector('.life a');
 blogLink2.onclick = function(){
 		alert("You are now heading to my personal blog!")
 }
 
-var blogLink3 = document.querySelector('.wellness a');
+let blogLink3 = document.querySelector('.wellness a');
 blogLink3.onclick = function(){
 	alert("You are now heading to my personal blog!");
 
 }
 
-//initial popup window to welcome you to my blog
-/*window.alert("Welcome to my Portfolio!");*/
-
 //popup window
- var modal = document.querySelector(".modal");
+ let modal = document.querySelector(".modal");
     var trigger = document.querySelector(".trigger");
     var closeButton = document.querySelector(".close-button");
 
@@ -115,17 +112,29 @@ blogLink3.onclick = function(){
     window.addEventListener("click", windowOnClick);
 
     //contact dropdown menu
-    var button = document.querySelector('.contact-menu');
-	var menu = document.querySelector("#menu");
+  let button = document.querySelector('.contact-menu');
+	let menu = document.querySelector("#menu");
 
     button.addEventListener('click', function(){
     	if(menu.style.display === 'block'){
     		menu.style.display = 'none';
-        button.replace('See Skills', 'See Less');
     	} else {
     		menu.style.display = 'block';
-
     	}
     })
 
-  
+  //see more content collapsible button
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
