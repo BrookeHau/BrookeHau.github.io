@@ -82,7 +82,7 @@ main{
 	grid-row: 2/3;
 }
 .content{
-	grid-template-rows: repeat(3, 350px);
+	grid-template-rows: repeat(3, 450px);
 }
 h3{
 	text-align: center;
@@ -130,23 +130,11 @@ h3{
         transform: scale(1.0);
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
-.carousel-container{
-	grid-row: 1/2;
-	overflow: hidden;	
-}
-#recipe-slider{
-	position: relative;
-	height: 230px;
-}
-
-#recipe-slider li{
-	max-width: 100%;
-	float: center;
-	list-style-type: none;
-	
-}
 #menu {
 	display: none;
+}
+.recipe{
+	grid-row:1/2;
 }
 .life{
 	grid-row: 2/3;

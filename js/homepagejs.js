@@ -75,22 +75,6 @@ var footer = document.querySelector('footer a')
 	});
 
 
-//alert that you're heading to my blog when you click on the link
-let blogLink = document.querySelector('#recipe-slider li a');
-blogLink.onclick = function(){
-		alert("You are now heading to my personal blog!")
-}
-
-let blogLink2 = document.querySelector('.life a');
-blogLink2.onclick = function(){
-		alert("You are now heading to my personal blog!")
-}
-
-let blogLink3 = document.querySelector('.wellness a');
-blogLink3.onclick = function(){
-	alert("You are now heading to my personal blog!");
-
-}
 
 //popup window
  let modal = document.querySelector(".modal");
@@ -137,4 +121,34 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+
+//slideshow
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
 }
